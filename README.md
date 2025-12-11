@@ -77,7 +77,7 @@ go run main.go
 | Level | Fokus                     | Skill Output                                                          |
 | ----- | ------------------------- | --------------------------------------------------------------------- |
 | 1     | Dasar logika & syntax     | Loop, slice, function, max/min, sum, palindrome,                      |
-|                                   | interface{}                                                           |
+|       |                           | interface{}                                                           |
 | 2     | Logika menengah           | Nested loop, map, string, sorting, filter                             |
 | 3     | Problem solving           | Recursion, struct, modular function, testing                          |
 | 4     | Backend dasar             | HTTP server, JSON, CRUD memory                                        |
