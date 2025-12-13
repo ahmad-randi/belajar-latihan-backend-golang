@@ -53,4 +53,23 @@ func main() {
 	fmt.Println("Hasil soal nomor 4 :", jumlahAngka, jumlahString)
 	fmt.Println("Hasil soal nomor 5 : ", latihan.ReverseSliceCampuran([]interface{}{1, "go", 3, "hi"}))
 
+	fmt.Println("===========================================================")
+
+	//latihan enam.go
+	fmt.Println("Hasil soal nomor 1 : ", latihan.FilterdanTransform([]int{1, 2, 3, 4, 5}))
+	fmt.Println("Hasil soal nomor 2 : ", latihan.GenapPertama([]int{1, 2, 3, 4, 5}))
+	fmt.Println("Hasil soal nomor 3 : ", latihan.VariabelSliceKosong([]int{1, 2, 3, 4, 5}))
+	fmt.Println("Hasil soal nomor 4 : ", latihan.LogikaString([]string{"aku", "kamu", "dia"}))
+	fmt.Println("Hasil soal nomor 5 : ", latihan.SliceCampuran([]interface{}{1, "a", 2, "b", 3}))
+
+	fmt.Println("===========================================================")
+
+	//latihan tujuh.go
+	fmt.Println("Hasil soal mudah : ", latihan.SoalMudah([]string{"go", "backend", "api", "server"}, 3))
+	fmt.Println("Hasil soal sedang : ", latihan.SoalSedang([]int{1, 4, 7, 10, 3}))
+	fmt.Println("Hasil soal susah : ", latihan.SoalSusah([]string{"api", "backend"}))
+	fmt.Println("[]int{1, 3, 5, 7}  ->", latihan.SoalSangatSusah([]int{1, 3, 5, 7}))
+	fmt.Println("[]int{9, 6, 3}    ->", latihan.SoalSangatSusah([]int{9, 6, 3}))
+	fmt.Println("[]int{1, 4, 2}    ->", latihan.SoalSangatSusah([]int{1, 4, 2}))
+
 }
