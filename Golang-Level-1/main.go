@@ -65,11 +65,19 @@ func main() {
 	fmt.Println("===========================================================")
 
 	//latihan tujuh.go
-	fmt.Println("Hasil soal mudah : ", latihan.SoalMudah([]string{"go", "backend", "api", "server"}, 3))
-	fmt.Println("Hasil soal sedang : ", latihan.SoalSedang([]int{1, 4, 7, 10, 3}))
-	fmt.Println("Hasil soal susah : ", latihan.SoalSusah([]string{"api", "backend"}))
-	fmt.Println("[]int{1, 3, 5, 7}  ->", latihan.SoalSangatSusah([]int{1, 3, 5, 7}))
-	fmt.Println("[]int{9, 6, 3}    ->", latihan.SoalSangatSusah([]int{9, 6, 3}))
-	fmt.Println("[]int{1, 4, 2}    ->", latihan.SoalSangatSusah([]int{1, 4, 2}))
+	fmt.Println("Hasil soal mudah : ", latihan.HitungStringLebihPanjangdariN([]string{"go", "backend", "api", "server"}, 3))
+	fmt.Println("Hasil soal sedang : ", latihan.AmbilAngkaTerakhiryangGenap([]int{1, 4, 7, 10, 3}))
+	fmt.Println("Hasil soal susah : ", latihan.HitungTotalHurufVokal([]string{"api", "backend"}))
+	fmt.Println("Hasil Soal sangat susah : ")
+	fmt.Println("[]int{1, 3, 5, 7}  ->", latihan.ValidasiPolaSliceAngka([]int{1, 3, 5, 7}))
+	fmt.Println("[]int{9, 6, 3}    ->", latihan.ValidasiPolaSliceAngka([]int{9, 6, 3}))
+	fmt.Println("[]int{1, 4, 2}    ->", latihan.ValidasiPolaSliceAngka([]int{1, 4, 2}))
+
+	fmt.Println("===========================================================")
+
+	//latihan delapan.go
+	fmt.Println("Hasil soal mudah : ", latihan.HitungJumlahHurufKapital([]string{"GoLangBackend"}))
+	fmt.Println("Hasil soal sedang : ", latihan.AmbilKataTerpanjang([]string{"api", "backend", "go", "server"}))
+	fmt.Println("Hasil soal sedang : ", latihan.HitungKataYangMengandungAngka([]string{"api1", "go", "v2", "backend"}))
 
 }
