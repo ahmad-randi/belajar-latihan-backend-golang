@@ -19,7 +19,9 @@ belajar-latihan-backend-golang/
 │       ├── empat.go               # Genap & ganjil, cari index, palindrome, angka < batas, slice *2
 │       ├── lima.go                # String & int campuran (interface{}), filter, reverse
 │       ├── enam.go                # Filter & transform data, logika genap, string, slice campuran
-│       └── tujuh.go               # Soal bertingkat: mudah, sedang, susah, sangat susah
+│       ├── tujuh.go               # Soal bertingkat: mudah, sedang, susah, sangat susah
+│       ├── delapan.go             # Analisis string lanjutan & validasi pola angka
+│       └── sembilan.go            # Evaluasi logika dasar (mudah–sedang–susah)
 ├── Golang-Level-2/                # Latihan Level 2 (belum ada)
 └── README.md                      # Dokumentasi project & roadmap belajar
 ```
@@ -103,6 +105,36 @@ Latihan problem solving bertahap:
    * atau tidak beraturan
 
    Menggunakan flag logika (`isNaik`, `isTurun`) tanpa sorting.
+
+</details>
+
+<details>
+   <summary><strong>🔹 Analisis String & Pola Angka (delapan.go)</strong></summary>
+   
+   Latihan fokus **ketelitian & logika tingkat lanjut**:
+   
+   * Menghitung total huruf kapital dalam slice string
+   * Mengambil kata terpanjang dari kumpulan string
+   * Menghitung karakter angka dalam string
+   * Validasi pola angka **naik lalu turun (gunung)**:
+     * minimal 3 angka
+     * tidak boleh datar
+     * tidak boleh naik setelah turun
+
+</details>
+
+<details>
+   <summary><strong>🔹 Evaluasi Logika (sembilan.go)</strong></summary>
+   
+   Latihan evaluasi ulang level 1:
+   
+   * Hitung jumlah angka genap
+   * Hitung jumlah string lebih panjang dari N
+   * Ambil angka ganjil pertama
+   * Cari nilai terbesar di slice
+   * Hitung jumlah string yang mengandung huruf vokal
+   
+   Digunakan untuk mengukur **kematangan logika dasar**.
 
 </details>
 
