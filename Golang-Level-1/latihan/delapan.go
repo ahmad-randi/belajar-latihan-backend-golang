@@ -36,3 +36,31 @@ func HitungKataYangMengandungAngka(data []string) int {
 	}
 	return counter // kembalikan total angka
 }
+
+func ValidasiPolaNaikTurunGunung(data []int) bool {
+	// Minimal 3 angka biar bisa naik lalu turun
+	if len(data) < 3 {
+		return false
+	}
+
+	//inisialisasi flag
+	naik := false
+	turun := false
+
+	for i := 1; i < len(data); i++ {
+		if data[i] > data[i-1] {
+			if turun {
+				return false
+			}
+			naik = true
+		} else if data[i] < data[i-1] {
+			if !naik {
+				return false
+			}
+			turun = true
+		} else {
+			return false
+		}
+	}
+	return naik && turun
+}

@@ -79,5 +79,18 @@ func main() {
 	fmt.Println("Hasil soal mudah : ", latihan.HitungJumlahHurufKapital([]string{"GoLangBackend"}))
 	fmt.Println("Hasil soal sedang : ", latihan.AmbilKataTerpanjang([]string{"api", "backend", "go", "server"}))
 	fmt.Println("Hasil soal sedang : ", latihan.HitungKataYangMengandungAngka([]string{"api1", "go", "v2", "backend"}))
+	fmt.Println("Hasil Soal sangat susah : ")
+	fmt.Println("[]int{1, 3, 5, 4, 2}  ->", latihan.ValidasiPolaNaikTurunGunung([]int{1, 3, 5, 4, 2}))
+	fmt.Println("[]int{1, 2, 3}    ->", latihan.ValidasiPolaNaikTurunGunung([]int{1, 2, 3}))
+	fmt.Println("[]int{5, 3, 1}    ->", latihan.ValidasiPolaNaikTurunGunung([]int{5, 3, 1}))
+	fmt.Println("[]int{1, 3, 2, 4}    ->", latihan.ValidasiPolaNaikTurunGunung([]int{1, 3, 2, 4}))
 
+	fmt.Println("===========================================================")
+
+	//latihan sembilan.go
+	fmt.Println("Hasil soal mudah ke-1 : ", latihan.MenghitungBerapaAngkaGenap([]int{1, 2, 3, 4, 5, 7, 8}))
+	fmt.Println("Hasil soal mudah ke-2 : ", latihan.JumlahStringYangPanjangLebihDariN([]string{"go", "backend", "api", "server"}, 3))
+	fmt.Println("Hasil soal sedang ke-1 : ", latihan.AmbilAngkaGajilPertamaSlice([]int{2, 4, 7, 9, 10}))
+	fmt.Println("Hasil soal sedang ke-2 : ", latihan.NilaiTerbesarDiSlice([]int{3, 9, 2, 10, 6}))
+	fmt.Println("Hasil soal susah : ", latihan.BerapaStringYangMengandungHurufVokal([]string{"api", "sky", "backend", "xyz"}))
 }
