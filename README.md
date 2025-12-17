@@ -21,7 +21,8 @@ belajar-latihan-backend-golang/
 │       ├── enam.go                # Filter & transform data, logika genap, string, slice campuran
 │       ├── tujuh.go               # Soal bertingkat: mudah, sedang, susah, sangat susah
 │       ├── delapan.go             # Analisis string lanjutan & validasi pola angka
-│       └── sembilan.go            # Evaluasi logika dasar (mudah–sedang–susah)
+│       ├── sembilan.go            # Evaluasi logika dasar (mudah–sedang–susah)
+│       └── final-level.go         # Final Test Level 1 (flag logic, early return, transform data)
 ├── Golang-Level-2/                # Latihan Level 2 (belum ada)
 └── README.md                      # Dokumentasi project & roadmap belajar
 ```
@@ -138,6 +139,21 @@ Latihan problem solving bertahap:
 
 </details>
 
+<details>
+<summary><strong>🔹 Evaluasi & Final Test Level 1</strong></summary>
+   
+   File **final-level.go** digunakan sebagai *penilaian akhir Level 1*:
+   
+   * Flag logic (aturan konsisten)
+   * Early return (berhenti tepat waktu)
+   * Double loop terkontrol
+   * Transform data (filter → ubah → simpan)
+   * Validasi pola kompleks (lembah)
+   
+   Jika seluruh soal ini bisa dikerjakan dan dijelaskan, maka **Level 1 dinyatakan lulus**.
+
+</details>
+
 ---
 
 ## 💡 Cara Menjalankan Level 1
@@ -171,6 +187,7 @@ go run main.go
 | Level | Fokus                     | Skill Output                                   |
 | ----- | ------------------------- | ---------------------------------------------- |
 | 1     | Dasar logika & syntax     | Loop, slice, function, palindrome, interface{} |
+|       |                           | flag logic, transform data                     |
 | 2     | Logika menengah           | Nested loop, map, string, sorting, filter      |
 | 3     | Problem solving           | Recursion, struct, modular function, testing   |
 | 4     | Backend dasar             | HTTP server, JSON, CRUD memory                 |
