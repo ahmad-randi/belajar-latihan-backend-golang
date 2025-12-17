@@ -48,107 +48,129 @@ Golang-Level-1/
 
 <details>
 <summary><strong>🔹 Dasar Bahasa & Struktur</strong></summary>
-### 🔹 Dasar Bahasa & Struktur
 
-* Variabel & tipe data (`int`, `string`, `bool`, dll)
-* Operator dasar (`+ - * / %`)
-* Looping (`for`, `for range`)
-* Conditional (`if`, `else`)
-* Slice & array (`append`, index)
-* Function (parameter & return)
+  * Variabel & tipe data (`int`, `string`, `bool`, dll)
+  * Operator dasar (`+ - * / %`)
+  * Looping (`for`, `for range`)
+  * Conditional (`if`, `else`)
+  * Slice & array (`append`, index)
+  * Function (parameter & return)
+    
 </details>
 
 ---
 
-### 🔹 Logika Dasar
+<details>
+<summary><strong>🔹 Logika Dasar</strong></summary>
 
-* Sum, max, min
-* Hitung angka genap & ganjil
-* Rata-rata & frequency
-* Reverse slice
-* Ambil elemen pertama & terakhir
-* Cek angka dalam slice
-* Cari index tertentu
-* Palindrome slice
-* Transform data (buat slice baru)
+  * Sum, max, min
+  * Hitung angka genap & ganjil
+  * Rata-rata & frequency
+  * Reverse slice
+  * Ambil elemen pertama & terakhir
+  * Cek angka dalam slice
+  * Cari index tertentu
+  * Palindrome slice
+  * Transform data (buat slice baru)
 
----
-
-### 🔹 String & Slice Campuran
-
-* Olah slice string
-* Filter data berdasarkan kondisi
-* Slice campuran (`[]interface{}`)
-* Hitung jumlah angka & string
-* Reverse slice campuran
-* `type switch`
+</details>
 
 ---
 
-### 🔹 Latihan Lanjutan (`enam.go`)
+<details>
+<summary><strong>🔹 String & Slice Campuran</strong></summary>
 
-Fokus pada **alur logika & transformasi data**:
+  * Olah slice string
+  * Filter data berdasarkan kondisi
+  * Slice campuran (`[]interface{}`)
+  * Hitung jumlah angka & string
+  * Reverse slice campuran
+  * `type switch`
 
-* Filter angka ganjil → transform (perkalian)
-* Ambil angka genap pertama
-* Menentukan nilai maksimum tanpa helper
-* Analisis string per karakter
-
----
-
-### 🔹 Soal Bertingkat (`tujuh.go`)
-
-Latihan problem solving bertahap:
-
-1. **Mudah** — hitung string dengan panjang > N
-2. **Sedang** — ambil angka genap terakhir
-3. **Susah** — hitung jumlah huruf vokal
-4. **Sangat Susah** — cek urutan angka:
-
-   * naik
-   * turun
-   * tidak beraturan
-
-Menggunakan **flag logic** (`isNaik`, `isTurun`) tanpa sorting.
+</details>
 
 ---
 
-### 🔹 Analisis String & Pola Angka (`delapan.go`)
+<details>
+<summary><strong>🔹 Latihan Lanjutan (`enam.go`)</strong></summary>
 
-Latihan ketelitian & logika lanjut:
+  Fokus pada **alur logika & transformasi data**:
+  
+  * Filter angka ganjil → transform (perkalian)
+  * Ambil angka genap pertama
+  * Menentukan nilai maksimum tanpa helper
+  * Analisis string per karakter
 
-* Hitung huruf kapital
-* Ambil kata terpanjang
-* Hitung karakter angka
-* Validasi pola **gunung (naik lalu turun)**:
-
-  * minimal 3 angka
-  * tidak boleh datar
-  * tidak boleh naik setelah turun
-
----
-
-### 🔹 Evaluasi Logika (`sembilan.go`)
-
-Digunakan untuk mengukur kematangan logika:
-
-* Hitung angka genap
-* Hitung string lebih panjang dari N
-* Ambil angka ganjil pertama
-* Cari nilai terbesar
-* Hitung string mengandung vokal
+</details>
 
 ---
 
-### 🔹 Final Test Level 1 (`final-level.go`)
 
-Ujian akhir Level 1 dengan fokus:
+<details>
+<summary><strong>🔹 Soal Bertingkat (`tujuh.go`)</strong></summary>
 
-* Flag logic
-* Early return
-* Double loop terkontrol
-* Filter → transform → simpan
-* Validasi pola kompleks (lembah)
+  Latihan problem solving bertahap:
+  
+  1. **Mudah** — hitung string dengan panjang > N
+  2. **Sedang** — ambil angka genap terakhir
+  3. **Susah** — hitung jumlah huruf vokal
+  4. **Sangat Susah** — cek urutan angka:
+  
+     * naik
+     * turun
+     * tidak beraturan
+  
+  Menggunakan **flag logic** (`isNaik`, `isTurun`) tanpa sorting.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🔹 Analisis String & Pola Angka (`delapan.go`)</strong></summary>
+
+  Latihan ketelitian & logika lanjut:
+  
+  * Hitung huruf kapital
+  * Ambil kata terpanjang
+  * Hitung karakter angka
+  * Validasi pola **gunung (naik lalu turun)**:
+  
+    * minimal 3 angka
+    * tidak boleh datar
+    * tidak boleh naik setelah turun
+
+</details>
+
+---
+
+<details>
+<summary><strong>🔹 Evaluasi Logika (`sembilan.go`)</strong></summary>
+
+  Digunakan untuk mengukur kematangan logika:
+  
+  * Hitung angka genap
+  * Hitung string lebih panjang dari N
+  * Ambil angka ganjil pertama
+  * Cari nilai terbesar
+  * Hitung string mengandung vokal
+
+</details>
+
+---
+
+<details>
+<summary><strong>🔹 Final Test Level 1 (`final-level.go`)</strong></summary>
+
+  Ujian akhir Level 1 dengan fokus:
+  
+  * Flag logic
+  * Early return
+  * Double loop terkontrol
+  * Filter → transform → simpan
+  * Validasi pola kompleks (lembah)
+
+</details>
 
 Jika seluruh soal bisa dikerjakan & dijelaskan, maka **Level 1 dinyatakan lulus**.
 
