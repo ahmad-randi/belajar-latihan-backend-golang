@@ -46,6 +46,8 @@ Golang-Level-1/
 
 ## 📚 Materi yang Dipelajari
 
+<details>
+<summary><strong>🔹 Dasar Bahasa & Struktur</strong></summary>
 ### 🔹 Dasar Bahasa & Struktur
 
 * Variabel & tipe data (`int`, `string`, `bool`, dll)
@@ -54,6 +56,7 @@ Golang-Level-1/
 * Conditional (`if`, `else`)
 * Slice & array (`append`, index)
 * Function (parameter & return)
+</details>
 
 ---
 
