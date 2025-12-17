@@ -65,6 +65,7 @@ belajar-latihan-backend-golang/
 ## 🛠️ Teknologi
 
 * **Language**: Go (Golang)
+* **Code Editor**: VS Code (Visual Code)
 * **Fokus utama**: Logic → Backend Mindset → API
 
 ---
