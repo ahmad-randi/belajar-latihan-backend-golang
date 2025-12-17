@@ -1,7 +1,18 @@
-# Belajar & Latihan Backend Golang
+# 🚀 Belajar & Latihan Backend Golang
 
-Repository ini berisi latihan Golang untuk membangun **fundamental logika**, serta **pola berpikir backend dasar**.
-Materi disusun **per level** dan bertahap, dimulai dari logika sederhana hingga problem solving yang lebih kompleks sebagai persiapan menuju **Programmer Backend Golang**.
+Repository ini adalah **halaman pembukaan (overview)** untuk proses belajar **Backend Golang** yang disusun **bertahap per level**.
+
+Setiap folder level merepresentasikan **tahapan kemampuan** yang harus dikuasai secara berurutan — mulai dari **logika dasar**, **problem solving**, hingga **backend fundamental**.
+
+> 📌 **Catatan penting:**
+> Detail materi, soal latihan, dan penjelasan teknis **tidak ditulis di README ini**, tetapi berada di `README.md` **di dalam masing-masing folder level**.
+
+---
+
+## 🎯 Tujuan Repository
+
+* Membangun **fundamental logika yang kuat** dengan Golang
+* Melatih **pola berpikir backend developer**
 
 ---
 
@@ -9,193 +20,56 @@ Materi disusun **per level** dan bertahap, dimulai dari logika sederhana hingga 
 
 ```
 belajar-latihan-backend-golang/
-├── Golang-Level-1/                # Latihan Level 1
-│   ├── main.go                    # File utama untuk menjalankan latihan Level 1
-│   ├── go.mod                     # Module Golang-Level-1
-│   └── latihan/                   # Folder berisi soal latihan Level 1
-│       ├── satu.go                # Max, sum odd, count above avg, reverse, frequency
-│       ├── dua.go                 # Genap, min, total, cek angka, rata-rata
-│       ├── tiga.go                # Total, genap, ambil angka pertama & terakhir, max
-│       ├── empat.go               # Genap & ganjil, cari index, palindrome, angka < batas, slice *2
-│       ├── lima.go                # String & int campuran (interface{}), filter, reverse
-│       ├── enam.go                # Filter & transform data, logika genap, string, slice campuran
-│       ├── tujuh.go               # Soal bertingkat: mudah, sedang, susah, sangat susah
-│       ├── delapan.go             # Analisis string lanjutan & validasi pola angka
-│       ├── sembilan.go            # Evaluasi logika dasar (mudah–sedang–susah)
-│       └── final-level.go         # Final Test Level 1 (flag logic, early return, transform data)
-├── Golang-Level-2/                # Latihan Level 2 (belum ada)
-└── README.md                      # Dokumentasi project & roadmap belajar
+├── Golang-Level-1/        # Fundamental logika & dasar Golang
+├── Golang-Level-2/        # (Next) Logika menengah
+├── Golang-Level-3/        # (Next) Problem solving & struct
+├── Golang-Level-4/        # (Next) Backend dasar (HTTP & API)
+│
+└── README.md              # Pembukaan / overview repository (file ini)
 ```
 
 ---
 
-## 📚 Materi Golang Level 1
+## 🧭 Alur Belajar yang Disarankan
 
-<details>
-<summary><strong>🔹 Dasar Bahasa & Struktur</strong></summary>
+1️⃣ Mulai dari **Golang-Level-1**
 
-* Variabel & tipe data dasar (`int`, `float64`, `string`, `bool`)
-* Operator dasar (`+`, `-`, `*`, `/`, `%`, `>`, `<`)
-* Looping (`for`, `for range`)
-* Kondisi (`if`, `else`)
-* Slice & array (akses index, `append`)
-* Function (parameter & return value)
+* Fokus ke logika dasar
+* Loop, condition, function, slice, string
 
-</details>
+2️⃣ Lanjut ke level berikutnya **secara berurutan**
 
-<details>
-<summary><strong>🔹 Logika Dasar</strong></summary>
+* Tidak disarankan loncat level
+* Pastikan paham *alur logika*, bukan hafalan kode
 
-* Sum, max, min, count
-* Rata-rata & frequency
-* Reverse slice
-* Ambil angka pertama & terakhir
-* Cek angka dalam slice
-* Hitung angka genap & ganjil
-* Cari index angka tertentu
-* Cek slice palindrome
-* Hitung angka lebih kecil dari batas
-* Membuat slice baru dengan transformasi data
+3️⃣ Biasakan:
 
-</details>
-
-<details>
-<summary><strong>🔹 String & Slice Campuran</strong></summary>
-
-* Hitung panjang kata dalam slice string
-* Ambil elemen string pertama dengan panjang genap
-* Filter slice angka berdasarkan kondisi
-* Mengolah slice campuran (`[]interface{}`)
-* Menghitung jumlah angka & string
-* Reverse slice campuran
-
-</details>
-
-<details>
-<summary><strong>🔹 Latihan Lanjutan (enam.go)</strong></summary>
-
-Fokus pada **alur logika dan transformasi data**:
-
-* Filter angka ganjil lalu transform (perkalian)
-* Mengambil angka genap pertama
-* Menentukan nilai maksimum tanpa helper bawaan
-* Analisis string per karakter
-* Penggunaan `type switch` pada slice campuran
-
-</details>
-
-<details>
-<summary><strong>🔹 Soal Bertingkat (tujuh.go)</strong></summary>
-
-Latihan problem solving bertahap:
-
-1. **Soal Mudah**
-   Menghitung jumlah string dengan panjang lebih dari N
-
-2. **Soal Sedang**
-   Mengambil angka genap terakhir dari slice
-
-3. **Soal Susah**
-   Menghitung jumlah huruf vokal dari kumpulan string
-
-4. **Soal Sangat Susah**
-   Mengecek apakah slice angka:
-
-   * terurut naik
-   * terurut turun
-   * atau tidak beraturan
-
-   Menggunakan flag logika (`isNaik`, `isTurun`) tanpa sorting.
-
-</details>
-
-<details>
-   <summary><strong>🔹 Analisis String & Pola Angka (delapan.go)</strong></summary>
-   
-   Latihan fokus **ketelitian & logika tingkat lanjut**:
-   
-   * Menghitung total huruf kapital dalam slice string
-   * Mengambil kata terpanjang dari kumpulan string
-   * Menghitung karakter angka dalam string
-   * Validasi pola angka **naik lalu turun (gunung)**:
-     * minimal 3 angka
-     * tidak boleh datar
-     * tidak boleh naik setelah turun
-
-</details>
-
-<details>
-   <summary><strong>🔹 Evaluasi Logika (sembilan.go)</strong></summary>
-   
-   Latihan evaluasi ulang level 1:
-   
-   * Hitung jumlah angka genap
-   * Hitung jumlah string lebih panjang dari N
-   * Ambil angka ganjil pertama
-   * Cari nilai terbesar di slice
-   * Hitung jumlah string yang mengandung huruf vokal
-   
-   Digunakan untuk mengukur **kematangan logika dasar**.
-
-</details>
-
-<details>
-<summary><strong>🔹 Evaluasi & Final Test Level 1</strong></summary>
-   
-   File **final-level.go** digunakan sebagai *penilaian akhir Level 1*:
-   
-   * Flag logic (aturan konsisten)
-   * Early return (berhenti tepat waktu)
-   * Double loop terkontrol
-   * Transform data (filter → ubah → simpan)
-   * Validasi pola kompleks (lembah)
-   
-   Jika seluruh soal ini bisa dikerjakan dan dijelaskan, maka **Level 1 dinyatakan lulus**.
-
-</details>
+* Membaca soal dengan teliti
+* Menyusun langkah logika
+* Menulis kode yang rapi & mudah dibaca
 
 ---
 
-## 💡 Cara Menjalankan Level 1
+## 🗺️ Roadmap Belajar Backend Golang
 
-1. Masuk ke folder Level 1:
-
-```bash
-cd Golang-Level-1
-```
-
-2. Jalankan program:
-
-```bash
-go run main.go
-```
+| Level | Fokus                 | Output Skill Utama                  |
+| ----: | --------------------- | ----------------------------------- |
+|     1 | Logika & syntax dasar | Loop, slice, function, flag logic   |
+|     2 | Logika menengah       | Nested loop, map, filter, transform |
+|     3 | Problem solving       | Struct, modular function, testing   |
+|     4 | Backend dasar         | HTTP server, JSON, CRUD             |
+|     5 | Siap junior backend   | REST API, DB, auth, unit test       |
 
 ---
 
-## 🎯 Tujuan Latihan Level 1
+## 🛠️ Teknologi
 
-* Menguasai logika dasar Golang
-* Terbiasa berpikir **step by step**
-* Memahami alur logika tanpa bergantung pada helper bawaan
-* Membangun pondasi kuat sebelum masuk Level 2
-* Menulis kode yang rapi, modular, dan mudah dibaca
+* **Language**: Go (Golang)
+* **Fokus utama**: Logic → Backend Mindset → API
 
 ---
 
-## 🚀 Roadmap Belajar Backend Golang
+✍️ Repository ini akan terus dikembangkan seiring progres belajar.
 
-| Level | Fokus                     | Skill Output                                   |
-| ----- | ------------------------- | ---------------------------------------------- |
-| 1     | Dasar logika & syntax     | Loop, slice, function, palindrome, interface{} |
-|       |                           | flag logic, transform data                     |
-| 2     | Logika menengah           | Nested loop, map, string, sorting, filter      |
-| 3     | Problem solving           | Recursion, struct, modular function, testing   |
-| 4     | Backend dasar             | HTTP server, JSON, CRUD memory                 |
-| 5     | Junior backend siap kerja | REST API, database, auth, unit test, Docker    |
-
----
-
-## 📝 Contact
-
-**Ahmad Randi**
+## 📝 Contact **Ahmad Randi** 
 Instagram: [@ahmadrandy_06](https://instagram.com/ahmadrandy_06)
