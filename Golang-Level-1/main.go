@@ -93,4 +93,13 @@ func main() {
 	fmt.Println("Hasil soal sedang ke-1 : ", latihan.AmbilAngkaGajilPertamaSlice([]int{2, 4, 7, 9, 10}))
 	fmt.Println("Hasil soal sedang ke-2 : ", latihan.NilaiTerbesarDiSlice([]int{3, 9, 2, 10, 6}))
 	fmt.Println("Hasil soal susah : ", latihan.BerapaStringYangMengandungHurufVokal([]string{"api", "sky", "backend", "xyz"}))
+
+	fmt.Println("===========================================================")
+
+	fmt.Println("Hasil soal final level 1 : ", latihan.FlagLogic([]int{2, 4, 6}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.FlagLogic([]int{1, 3, 5}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.FlagLogic([]int{2, 3, 4}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.EarlyReturn([]string{"go", "Backend", "api"}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.HitungStringDenganMinimalDuaVokal([]string{"go", "Backend", "api"}))
+
 }
