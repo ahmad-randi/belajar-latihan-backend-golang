@@ -90,3 +90,46 @@ func HitungStringDenganMinimalDuaVokal(data []string) int {
 	// Kembalikan total string yang valid
 	return totalValid
 }
+
+// PolaLembah mengecek apakah slice membentuk pola:
+// TURUN → NAIK (lembah)
+func PolaLembah(data []int) bool {
+	// Minimal 3 elemen agar bisa turun lalu naik
+	if len(data) < 3 {
+		return false
+	}
+
+	// Flag penanda fase
+	turun := false
+	naik := false
+
+	// Loop mulai index ke-1 untuk bandingkan dengan sebelumnya
+	for i := 1; i < len(data); i++ {
+
+		// Jika angka menurun
+		if data[i] < data[i-1] {
+
+			// Jika sudah naik lalu turun lagi → tidak valid
+			if naik {
+				return false
+			}
+			turun = true
+
+			// Jika angka menaik
+		} else if data[i] > data[i-1] {
+
+			// Naik harus setelah turun
+			if !turun {
+				return false
+			}
+			naik = true
+
+			// Jika angka sama → tidak valid
+		} else {
+			return false
+		}
+	}
+
+	// Valid jika pernah turun dan pernah naik
+	return turun && naik
+}

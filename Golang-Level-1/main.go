@@ -101,5 +101,9 @@ func main() {
 	fmt.Println("Hasil soal final level 1 : ", latihan.FlagLogic([]int{2, 3, 4}))
 	fmt.Println("Hasil soal final level 1 : ", latihan.EarlyReturn([]string{"go", "Backend", "api"}))
 	fmt.Println("Hasil soal final level 1 : ", latihan.HitungStringDenganMinimalDuaVokal([]string{"go", "Backend", "api"}))
-
+	fmt.Println("Hasil soal final level 1 : ", latihan.PolaLembah([]int{5, 3, 1, 4, 6}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.PolaLembah([]int{1, 3, 5}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.PolaLembah([]int{5, 4, 3}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.PolaLembah([]int{5, 4, 3}))
+	fmt.Println("Hasil soal final level 1 : ", latihan.PolaLembah([]int{5, 5, 3}))
 }
