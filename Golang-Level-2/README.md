@@ -66,49 +66,49 @@ Golang-Level-2/
 <details>
 <summary><strong>🔹 Pengenalan Struct & Slice</strong></summary>
 
-* Membuat struct yang rapi & konsisten (`User`, `Product`)
-* Pemisahan tanggung jawab (`model` vs `service`)
-* Slice sebagai **database sementara (in-memory)**
-* Konsep *fail fast* & *early return*
-* Validasi data dasar
-* Multiple error menggunakan `[]error`
+ * Membuat struct yang rapi & konsisten (`User`, `Product`)
+ * Pemisahan tanggung jawab (`model` vs `service`)
+ * Slice sebagai **database sementara (in-memory)**
+ * Konsep *fail fast* & *early return*
+ * Validasi data dasar
+ * Multiple error menggunakan `[]error`
 
 </details>
 
 <details>
 <summary><strong>🔹 CRUD CLI (Tanpa Database)</strong></summary>
 
-* **Create** → menambahkan data ke slice
-* **Read** → menampilkan data (by ID / all)
-* **Update** → update data dengan validasi
-* **Delete** → hapus data menggunakan slice baru
-* Menu CLI interaktif (`fmt.Scanln`)
-
-> Fokus: alur data & logika backend, bukan UI
+ * **Create** → menambahkan data ke slice
+ * **Read** → menampilkan data (by ID / all)
+ * **Update** → update data dengan validasi
+ * **Delete** → hapus data menggunakan slice baru
+ * Menu CLI interaktif (`fmt.Scanln`)
+ 
+ > Fokus: alur data & logika backend, bukan UI
 
 </details>
 
 <details>
 <summary><strong>🔹 Mini Project / Studi Kasus</strong></summary>
 
-* **CRUD Users CLI**
-
-  * Simulasi backend user management
-  * Validasi input & error handling
-
-* **Kasir CLI**
-
-  * Tambah produk
-  * Hitung total belanja
-  * Checkout
-
-* **Inventory CLI**
-
-  * Tambah barang
-  * Update stok
-  * Hapus barang
-
-Semua project menggunakan **pola logika yang sama** seperti backend sungguhan.
+ * **CRUD Users CLI**
+ 
+   * Simulasi backend user management
+   * Validasi input & error handling
+ 
+ * **Kasir CLI (Belum Tuntas)**
+ 
+   * Tambah produk
+   * Hitung total belanja
+   * Checkout
+ 
+ * **Inventory CLI (Belum Tuntas)**
+ 
+   * Tambah barang
+   * Update stok
+   * Hapus barang
+ 
+ Semua project menggunakan **pola logika yang sama** seperti backend sungguhan.
 
 </details>
 
