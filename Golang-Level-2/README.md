@@ -1,13 +1,15 @@
-# 🚀 Golang Level 2 — Fundamental Backend (CLI Based)
+# 🚀 Golang Level 2 — Fundamental Backend Engineering (CLI)
 
-Level 2 adalah **jembatan penting** antara *logika dasar (Level 1)* dan *backend production-ready*.
-Pada level ini, fokus utama adalah **cara berpikir backend engineer**, bukan framework.
+Level 2 adalah tahap **transisi penting** dari *belajar syntax Golang (Level 1)* menuju **cara berpikir sebagai Backend Engineer**.
 
-Semua studi kasus dibuat dalam bentuk **CLI (Command Line Interface)** agar kamu:
+Pada level ini kamu **belum fokus ke API, database, atau framework**, melainkan ke:
 
-* memahami alur data secara eksplisit
-* terbiasa menulis kode terstruktur & aman
-* tidak bergantung pada magic framework
+* struktur project backend yang rapi
+* alur data yang jelas dan terkontrol
+* pemisahan tanggung jawab kode (layering)
+* logika bisnis yang aman dan mudah dikembangkan
+
+Semua studi kasus dibuat dalam bentuk **CLI (Command Line Interface)** agar alur logika terlihat **jelas & eksplisit**, tanpa bantuan framework.
 
 ---
 
@@ -15,154 +17,116 @@ Semua studi kasus dibuat dalam bentuk **CLI (Command Line Interface)** agar kamu
 
 Setelah menyelesaikan Level 2, kamu diharapkan mampu:
 
-* Mendesain **struct & layer sederhana** (model, service)
-* Mengelola data menggunakan **slice sebagai in-memory database**
-* Menerapkan **validasi data & secure coding dasar**
+* Mendesain **struktur folder backend yang scalable**
+* Memahami **alur data backend dari input sampai penyimpanan**
+* Menerapkan **validasi & error handling**
 * Membuat **CRUD lengkap (Create, Read, Update, Delete)**
-* Menulis program **CLI interaktif** dengan alur jelas
-* Memahami *kenapa backend code ditulis seperti ini*
+* Menulis kode yang **mudah dibaca, diuji, dan dikembangkan**
 
-Level ini adalah **pondasi sebelum masuk ke:**
+Level ini adalah **pondasi sebelum masuk ke materi lanjutan** seperti:
 
-> goroutines, context, database, REST API, framework (Fiber/Gin)
+> Goroutines • Context • Database • REST API • Framework (Gin / Fiber)
 
 ---
 
-## 📂 Struktur Folder Level 2
+## 📂 Struktur Umum Golang-Level-2
 
 ```
 Golang-Level-2/
-├── Pengenalan/                # Materi dasar Level 2
-│   ├── model/                 # Struct data (User, Product, dll)
-│   │   └── user.go
-│   ├── service/               # Logic & validasi
-│   │   └── user_service.go
-│   ├── main.go                # Menu CLI CRUD USER
-│   └── main.go                # Entry point Run Program
+├── Pengenalan/                 # Materi dasar Level 2
 │
-├── Projects/                  # Studi kasus & mini project
-│   ├── CRUD-Users/            # CRUD Users via CLI
-│   │   ├── model/
-│   │   ├── service/
-│   │   └── main.go
-│   │
-│   ├── Kasir-CLI/              # Mini project kasir
-│   │   ├── model/
-│   │   ├── service/
-│   │   └── main.go
-│   │
-│   └── Inventory-CLI/          # Mini project inventory barang
-│       ├── model/
-│       ├── service/
-│       └── main.go
+├── user-project/               # ⭐ Project utama (industry style)
 │
-├── go.mod                      # Module Golang Level 2
+├── kasir-project/              # (menyusul)
+├── inventory-project/          # (menyusul)
+│
 └── README.md                   # Dokumentasi Level 2
 ```
 
 ---
 
-## 📚 Materi yang Dipelajari
+## ⭐ Project Utama: user-project
 
-<details>
-<summary><strong>🔹 Pengenalan Struct & Slice</strong></summary>
+`user-project` adalah **project inti Level 2**.
 
- * Membuat struct yang rapi & konsisten (`User`, `Product`)
- * Pemisahan tanggung jawab (`model` vs `service`)
- * Slice sebagai **database sementara (in-memory)**
- * Konsep *fail fast* & *early return*
- * Validasi data dasar
- * Multiple error menggunakan `[]error`
+Walaupun:
 
-</details>
+* ❌ belum pakai database
+* ❌ belum pakai API
+* ❌ belum pakai framework
 
-<details>
-<summary><strong>🔹 CRUD CLI (Tanpa Database)</strong></summary>
+Namun project ini:
 
- * **Create** → menambahkan data ke slice
- * **Read** → menampilkan data (by ID / all)
- * **Update** → update data dengan validasi
- * **Delete** → hapus data menggunakan slice baru
- * Menu CLI interaktif (`fmt.Scanln`)
- 
- > Fokus: alur data & logika backend, bukan UI
+* menggunakan **struktur backend industri**
+* menerapkan **layering yang benar**
+* siap di-upgrade ke REST API & database
 
-</details>
-
-<details>
-<summary><strong>🔹 Mini Project / Studi Kasus</strong></summary>
-
- * **CRUD Users CLI**
- 
-   * Simulasi backend user management
-   * Validasi input & error handling
- 
- * **Kasir CLI (Belum Tuntas)**
- 
-   * Tambah produk
-   * Hitung total belanja
-   * Checkout
- 
- * **Inventory CLI (Belum Tuntas)**
- 
-   * Tambah barang
-   * Update stok
-   * Hapus barang
- 
- Semua project menggunakan **pola logika yang sama** seperti backend sungguhan.
-
-</details>
+📌 **Project ini menjadi template backend kamu ke depan.**
 
 ---
 
-## ▶️ Cara Menjalankan
+## 📚 Fokus Materi Level 2
 
-### 1️⃣ Pengenalan
+### 🔹 Backend Structure & Layering
+
+* `cmd` → input user (CLI)
+* `internal` → logic inti aplikasi
+* `usecase` → alur bisnis
+* `service` → logic teknis
+* `repository` → penyimpanan data
+* `dto` → data masuk (request)
+* `helper` → fungsi reusable (FindByID, GenerateID)
+
+### 🔹 CRUD & Data Flow
+
+* Create
+* Read
+* Update
+* Delete
+* Validasi data
+* Error handling
+* Helper function
+
+### 🔹 Backend Mindset
+
+* kode tidak saling bergantung
+* logic mudah ditelusuri
+* struktur siap berkembang
+* konsisten dan profesional
+
+---
+
+## ▶️ Cara Menjalankan Project
+
+Masuk ke folder project, lalu jalankan:
 
 ```bash
-cd Golang-Level-2/Pengenalan
 go run main.go
 ```
 
-### 2️⃣ CRUD Users
+Contoh:
 
 ```bash
-cd Golang-Level-2/Projects/CRUD-Users
-go run main.go
-```
-
-### 3️⃣ Kasir CLI
-
-```bash
-cd Golang-Level-2/Projects/Kasir-CLI
-go run main.go
-```
-
-### 4️⃣ Inventory CLI
-
-```bash
-cd Golang-Level-2/Projects/Inventory-CLI
+cd Golang-Level-2/user-project
 go run main.go
 ```
 
 ---
 
-## ✅ Aturan Belajar (Wajib)
+## ✅ Aturan Belajar (WAJIB)
 
-* ❌ Jangan langsung copy jawaban
-* ✍️ Tulis alur logika di komentar
-* 🧠 Pahami *kenapa* kode dibuat seperti itu
-* 🔁 Ulangi sampai bisa jelasin tanpa lihat kode
+* ❌ Jangan hanya copy–paste
+* ✍️ Baca komentar di setiap file
+* 🧠 Pahami fungsi tiap folder
+* 🔁 Coba modifikasi sendiri
 
 ---
 
 ## 🚦 Catatan Mentor
 
-Jika Level 2 ini sudah terasa **masuk akal & rapi**, berarti:
+Jika kamu sudah **paham struktur & alur user-project**, berarti:
 
 * mindset backend kamu **sudah terbentuk**
-* kamu siap naik ke **Level 3 (Concurrency, DB, API)**
+* kamu siap naik ke **Level 3**
 
-> Backend bukan soal framework cepat, tapi **alur & konsistensi logika**.
-
-🔥 Selamat datang di Level 2 — mulai belajar sebagai backend engineer.
+🔥 Level 2 bukan soal cepat, tapi **kuat & matang**.
