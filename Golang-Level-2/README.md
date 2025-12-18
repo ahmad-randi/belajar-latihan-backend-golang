@@ -37,7 +37,8 @@ Golang-Level-2/
 │   │   └── user.go
 │   ├── service/               # Logic & validasi
 │   │   └── user_service.go
-│   └── main.go                # Entry point latihan
+│   ├── main.go                # Menu CLI CRUD USER
+│   └── main.go                # Entry point Run Program
 │
 ├── Projects/                  # Studi kasus & mini project
 │   ├── CRUD-Users/            # CRUD Users via CLI
