@@ -56,6 +56,10 @@ func UpdateBook(req dto.UpdateBookRequest) error {
 		return err
 	}
 
+	if book.IsBorrowed {
+		return ErrBookUpdateAlreadyBorrowed
+	}
+
 	book.Title = req.Title
 	book.Author = req.Author
 	book.Description = req.Description
@@ -102,5 +106,12 @@ func ReturnBook(id int) error {
 DeleteBook menghapus buku
 */
 func DeleteBook(id int) error {
+	book, err := repo.FindByID(id)
+	if err != nil {
+		return err
+	}
+	if book.IsBorrowed {
+		return ErrBookDeleteAlreadyBorrowed
+	}
 	return repo.Delete(id)
 }
