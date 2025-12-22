@@ -36,7 +36,7 @@ Golang-Level-2/
 ├── Pengenalan/                 # Materi dasar Level 2
 │
 ├── user-project/               # ⭐ Project utama (industry style)
-│
+├── buku-project/               # ⭐ Project kedua (learn industry style)
 ├── kasir-project/              # (menyusul)
 ├── inventory-project/          # (menyusul)
 │
