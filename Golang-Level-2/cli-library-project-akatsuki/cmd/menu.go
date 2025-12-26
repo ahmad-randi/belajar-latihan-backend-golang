@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"bufio"
+	"cli-library-project-akatsuki/menu"
 	"cli-library-project-akatsuki/util"
 	"fmt"
 	"os"
@@ -25,6 +26,7 @@ func RunMenu() {
 		switch choice {
 		case "1":
 			//Member Management
+			menu.MemberMenuAkatsuki(reader)
 		case "2":
 			//Mission Management
 		case "3":
