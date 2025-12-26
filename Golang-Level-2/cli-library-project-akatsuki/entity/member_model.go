@@ -9,7 +9,7 @@ type Member struct {
 	Name          string    // Nama member (Itachi, Kisame, dll)
 	Partner       string    // Partner satu tim
 	Rank          string    // Pemimpin / Member
-	Status        string    // Aktif / Mati / Kabur
+	Status        bool      // Aktif / Tidak Aktif
 	TotalMissions int       // Total misi yang pernah dijalankan
 	TotalReward   int       // Total reward (Ryō) dari misi
 	CreatedAt     time.Time // Waktu dibuat member
