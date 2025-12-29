@@ -6,17 +6,24 @@ import (
 )
 
 // Membuat database sementar menampung di slice
-type Repository struct {
+type RepositoryMember struct {
 	members []entity.Member
 }
 
 // Add member baru
-func (r *Repository) AddMember(member entity.Member) {
+func (r *RepositoryMember) AddMember(member entity.Member) {
 	r.members = append(r.members, member)
 }
 
+/*
+FindAll data member
+*/
+func (r *RepositoryMember) FindAll() []entity.Member {
+	return r.members
+}
+
 // FindById mencari member berdasarkan ID
-func (r *Repository) FindByID(id int) (*entity.Member, error) {
+func (r *RepositoryMember) FindByID(id int) (*entity.Member, error) {
 	for i := range r.members {
 		if r.members[i].ID == id {
 			return &r.members[i], nil
@@ -26,7 +33,7 @@ func (r *Repository) FindByID(id int) (*entity.Member, error) {
 }
 
 // Update menganti data member
-func (r *Repository) UpdateMember(member entity.Member) error {
+func (r *RepositoryMember) UpdateMember(member entity.Member) error {
 	for i := range r.members {
 		if r.members[i].ID == member.ID {
 			r.members[i] = member
@@ -37,7 +44,7 @@ func (r *Repository) UpdateMember(member entity.Member) error {
 }
 
 // Delete menghapus member berdasarkan ID
-func (r *Repository) Delete(id int) error {
+func (r *RepositoryMember) Delete(id int) error {
 	for i := range r.members {
 		if r.members[i].ID == id {
 			r.members = append(r.members[:i], r.members[i+1:]...)
