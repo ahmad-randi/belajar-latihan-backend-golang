@@ -26,8 +26,3 @@ func ValidateAddMember(req member_dto.CreateMemberRequestUser) error {
 	return nil
 
 }
-
-// Validasi update member
-// func ValidateUpdateMember(rqq member_dto.UpdateMemberRequestUser) error {
-
-// }

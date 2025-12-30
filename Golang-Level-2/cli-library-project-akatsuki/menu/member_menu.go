@@ -2,6 +2,7 @@ package menu
 
 import (
 	"bufio"
+	"cli-library-project-akatsuki/menu/crud"
 	"fmt"
 	"strings"
 )
@@ -25,8 +26,10 @@ func MemberMenuAkatsuki(reader *bufio.Reader) {
 		switch choiceMember {
 		case "1":
 			//Add Member
+			crud.AddMember(reader)
 		case "2":
 			//View All Member
+			crud.ViewAllMember()
 		case "3":
 			//Update Member
 		case "4":

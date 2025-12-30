@@ -3,10 +3,10 @@ package service
 import (
 	"cli-library-project-akatsuki/dto/member_dto"
 	"cli-library-project-akatsuki/entity"
+	"cli-library-project-akatsuki/errors"
 	"cli-library-project-akatsuki/helper"
 	"cli-library-project-akatsuki/repository"
 	"cli-library-project-akatsuki/validate"
-	"errors"
 	"strings"
 	"time"
 )
@@ -23,7 +23,7 @@ func AddMember(req member_dto.CreateMemberRequestUser) error {
 	for _, value := range repo.FindAll() {
 		if strings.EqualFold(value.Name, req.Nama) &&
 			strings.EqualFold(value.Partner, req.Patner) {
-			return errors.New("member sudah terdaftar")
+			return errors.ErrDuplicateMember
 		}
 	}
 
@@ -32,10 +32,16 @@ func AddMember(req member_dto.CreateMemberRequestUser) error {
 		ID:        helper.GenerateMemberID(),
 		Name:      req.Nama,
 		Rank:      req.Rank,
+		Partner:   req.Patner,
 		Status:    false,
 		CreatedAt: now,
 		UpdatedAt: now,
 	}
 	repo.AddMember(member)
 	return nil
+}
+
+// View all member
+func GetAllMember() []entity.Member {
+	return repo.FindAll()
 }
