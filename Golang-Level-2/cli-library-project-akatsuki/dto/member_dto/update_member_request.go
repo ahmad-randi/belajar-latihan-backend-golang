@@ -8,6 +8,7 @@ ID wajib karena kita harus tahu member mana yang diubah
 */
 type UpdateMemberRequestUser struct {
 	ID     int
+	Nama   string
 	Patner string
 	Rank   string
 }

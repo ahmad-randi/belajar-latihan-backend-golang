@@ -26,3 +26,17 @@ func ValidateAddMember(req member_dto.CreateMemberRequestUser) error {
 	return nil
 
 }
+
+// Validasi Update Member
+func ValidateUpdateMember(req member_dto.UpdateMemberRequestUser) error {
+	if strings.TrimSpace(req.Nama) == "" {
+		return errors.New("nama tidak boleh kosong")
+	}
+	if strings.TrimSpace(req.Patner) == "" {
+		return errors.New("patner tidak boleh kosong")
+	}
+	if strings.TrimSpace(req.Rank) == "" {
+		return errors.New("patner tidak boleh kosong")
+	}
+	return nil
+}

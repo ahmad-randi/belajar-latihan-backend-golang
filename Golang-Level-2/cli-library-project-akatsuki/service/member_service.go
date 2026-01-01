@@ -13,8 +13,8 @@ import (
 
 var repo = repository.RepositoryMember{}
 
-// Logik Add new member
-func AddMember(req member_dto.CreateMemberRequestUser) error {
+// Add new member logic
+func AddMemberService(req member_dto.CreateMemberRequestUser) error {
 	if err := validate.ValidateAddMember(req); err != nil {
 		return err
 	}
@@ -41,7 +41,30 @@ func AddMember(req member_dto.CreateMemberRequestUser) error {
 	return nil
 }
 
-// View all member
-func GetAllMember() []entity.Member {
+// View all member service logic
+func GetAllMemberService() []entity.Member {
 	return repo.FindAll()
+}
+
+// Update data memver sevice logic
+func UpdateMmeberService(req member_dto.UpdateMemberRequestUser) error {
+	if err := validate.ValidateUpdateMember(req); err != nil {
+		return err
+	}
+
+	member, err := repo.FindByID(req.ID)
+	if err != nil {
+		return err
+	}
+
+	if member.Status {
+		return errors.ErrMemberInactive
+	}
+
+	member.Name = req.Nama
+	member.Partner = req.Patner
+	member.Rank = req.Rank
+	member.UpdatedAt = time.Now()
+
+	return repo.UpdateMember(*member)
 }

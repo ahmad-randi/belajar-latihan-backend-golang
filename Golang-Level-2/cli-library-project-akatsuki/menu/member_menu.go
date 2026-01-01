@@ -26,12 +26,13 @@ func MemberMenuAkatsuki(reader *bufio.Reader) {
 		switch choiceMember {
 		case "1":
 			//Add Member
-			crud.AddMember(reader)
+			crud.AddMembers(reader)
 		case "2":
 			//View All Member
-			crud.ViewAllMember()
+			crud.ViewAllMembers()
 		case "3":
 			//Update Member
+			crud.UpdateMembers(reader)
 		case "4":
 			//Deactivate Member
 		case "5":
